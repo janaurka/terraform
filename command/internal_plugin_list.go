@@ -15,6 +15,7 @@ import (
 	chefprovider "github.com/hashicorp/terraform/builtin/providers/chef"
 	clcprovider "github.com/hashicorp/terraform/builtin/providers/clc"
 	cloudflareprovider "github.com/hashicorp/terraform/builtin/providers/cloudflare"
+	cloudfoundryprovider "github.com/hashicorp/terraform/builtin/providers/cloudfoundry"
 	cloudstackprovider "github.com/hashicorp/terraform/builtin/providers/cloudstack"
 	cobblerprovider "github.com/hashicorp/terraform/builtin/providers/cobbler"
 	consulprovider "github.com/hashicorp/terraform/builtin/providers/consul"
@@ -45,6 +46,7 @@ import (
 	randomprovider "github.com/hashicorp/terraform/builtin/providers/random"
 	rundeckprovider "github.com/hashicorp/terraform/builtin/providers/rundeck"
 	scalewayprovider "github.com/hashicorp/terraform/builtin/providers/scaleway"
+	shieldprovider "github.com/hashicorp/terraform/builtin/providers/shield"
 	softlayerprovider "github.com/hashicorp/terraform/builtin/providers/softlayer"
 	statuscakeprovider "github.com/hashicorp/terraform/builtin/providers/statuscake"
 	templateprovider "github.com/hashicorp/terraform/builtin/providers/template"
@@ -75,6 +77,7 @@ var InternalProviders = map[string]plugin.ProviderFunc{
 	"chef":         chefprovider.Provider,
 	"clc":          clcprovider.Provider,
 	"cloudflare":   cloudflareprovider.Provider,
+	"cloudfoundry": cloudfoundryprovider.Provider,
 	"cloudstack":   cloudstackprovider.Provider,
 	"cobbler":      cobblerprovider.Provider,
 	"consul":       consulprovider.Provider,
@@ -105,6 +108,7 @@ var InternalProviders = map[string]plugin.ProviderFunc{
 	"random":       randomprovider.Provider,
 	"rundeck":      rundeckprovider.Provider,
 	"scaleway":     scalewayprovider.Provider,
+	"shield":       shieldprovider.Provider,
 	"softlayer":    softlayerprovider.Provider,
 	"statuscake":   statuscakeprovider.Provider,
 	"template":     templateprovider.Provider,
